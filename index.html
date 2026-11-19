@@ -4,77 +4,96 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>NA Campaign Hub | Performance Marketing Request Form</title>
-<style>
-  :root{--g:#00813D;--lt:#E8F5EC;--dk:#1F2937;--gy:#6B7280;--ln:#C9CED6;--am:#B45309;--bg:#F3F4F6}
-  *{box-sizing:border-box}
-  body{margin:0;background:var(--bg);font-family:Arial,Helvetica,sans-serif;color:var(--dk);font-size:14px}
-  .wrap{max-width:860px;margin:24px auto;background:#fff;padding:32px 36px;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,.08)}
-  .eyebrow{color:var(--g);font-weight:bold;font-size:12px;letter-spacing:.5px}
-  h1{margin:4px 0 2px;font-size:24px}
-  .path{color:var(--gy);font-style:italic;font-size:12px;margin-bottom:12px}
-  hr{border:0;border-top:2px solid var(--g);margin:0 0 16px}
-  ul.howto{margin:0 0 6px;padding-left:20px;font-size:13px;line-height:1.6}
-  .note{font-size:12px;color:var(--gy);font-style:italic;margin-bottom:18px}
-  .star{color:var(--am);font-weight:bold}
-  .banner{background:var(--g);color:#fff;padding:10px 14px;border-radius:4px 4px 0 0;margin-top:22px}
-  .banner h2{margin:0;font-size:16px}
-  .banner p{margin:2px 0 0;font-size:12px;font-style:italic}
-  .row{display:grid;grid-template-columns:230px 1fr;border:1px solid var(--ln);border-top:0}
-  .row:first-of-type{border-top:1px solid var(--ln)}
-  .row > label,.row > .lbl{background:var(--lt);padding:12px;font-weight:bold;font-size:13px}
-  .row > div.ctl{padding:10px 12px}
-  .hint{display:block;color:var(--gy);font-style:italic;font-size:11.5px;margin-bottom:6px}
-  input[type=text],input[type=date],input[type=number],textarea{width:100%;padding:7px 9px;border:1px solid var(--ln);border-radius:4px;font:inherit;background:#FAFBFC}
-  textarea{min-height:64px;resize:vertical}
-  input:focus,textarea:focus{outline:2px solid var(--g);outline-offset:1px;background:#fff}
-  .checks{display:flex;flex-wrap:wrap;gap:6px 18px;margin-bottom:6px}
-  .checks label{font-weight:normal;display:flex;align-items:center;gap:6px;cursor:pointer}
-  input[type=checkbox],input[type=radio]{accent-color:var(--g);width:16px;height:16px}
-  .need{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--ln);border-top:0}
-  .need label{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:10px 12px;border-top:1px solid var(--ln);cursor:pointer}
-  .need label:nth-child(odd){border-right:1px solid var(--ln)}
-  .need label:hover{background:var(--lt)}
-  .need label span.opt{display:flex;align-items:center;gap:8px}
-  .need .tag{color:var(--g);font-weight:bold;font-size:12px;white-space:nowrap}
-  .need label.sel{background:var(--lt);box-shadow:inset 3px 0 0 var(--g)}
-  .placeholder{margin-top:16px;padding:22px;text-align:center;background:var(--bg);border:1px dashed var(--ln);border-radius:6px}
-  .placeholder strong{display:block;font-size:15px;margin-bottom:4px}
-  .placeholder span{color:var(--gy);font-size:12.5px;font-style:italic}
-  .block[hidden],.placeholder[hidden]{display:none}
-  .actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
-  button{font:inherit;font-weight:bold;padding:10px 18px;border-radius:4px;border:2px solid var(--g);cursor:pointer}
-  .primary{background:var(--g);color:#fff}
-  .secondary{background:#fff;color:var(--g)}
-  button:focus-visible{outline:3px solid var(--dk);outline-offset:2px}
-  .msg{margin-top:12px;font-size:13px}
-  .msg.err{color:#B91C1C}
-  .msg.ok{color:var(--g)}
-  footer{text-align:right;color:var(--gy);font-size:11px;margin-top:26px}
-  @media (max-width:640px){
-    .wrap{padding:20px 16px;margin:0;border-radius:0}
-    .row{grid-template-columns:1fr}
-    .need{grid-template-columns:1fr}
-    .need label:nth-child(odd){border-right:0}
-  }
-  @media print{
-    body{background:#fff}
-    .wrap{box-shadow:none;margin:0;padding:0;max-width:none}
-    .actions,.msg,.placeholder{display:none!important}
-    .row,.banner{break-inside:avoid}
-    .banner,.row > label,.row > .lbl,.need label.sel{-webkit-print-color-adjust:exact;print-color-adjust:exact}
-  }
-</style>
+<style>body{margin:0;background:#F3F4F6}</style>
 </head>
 <body>
-<div class="wrap">
-  <div class="eyebrow">NA CAMPAIGN HUB</div>
-  <h1>Performance Marketing Request Form (Offline)</h1>
-  <div class="path">Mirrors Workfront: Performance Marketing Requests &gt; NA &gt; Campaign Hub</div>
+<div id="chApp"><style>
+  #chApp{--g:#00813D;--lt:#E8F5EC;--dk:#1F2937;--gy:#6B7280;--ln:#C9CED6;--am:#B45309;--bg:#F3F4F6}
+  #chApp,#chApp *{box-sizing:border-box}
+  #chApp{font-family:Arial,Helvetica,sans-serif;color:var(--dk);font-size:14px}
+  #chApp .wrap{max-width:860px;margin:24px auto;background:#fff;padding:32px 36px;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,.08)}
+  #chApp .eyebrow{color:var(--g);font-weight:bold;font-size:12px;letter-spacing:.5px}
+  #chApp h1{margin:4px 0 2px;font-size:24px}
+  #chApp .path{color:var(--gy);font-style:italic;font-size:12px;margin-bottom:12px}
+  #chApp hr{border:0;border-top:2px solid var(--g);margin:0 0 16px}
+  #chApp ul.howto{margin:0 0 6px;padding-left:20px;font-size:13px;line-height:1.6}
+  #chApp .note{font-size:12px;color:var(--gy);font-style:italic;margin-bottom:18px}
+  #chApp .star{color:var(--am);font-weight:bold}
+  #chApp .banner{background:var(--g);color:#fff;padding:10px 14px;border-radius:4px 4px 0 0;margin-top:22px}
+  #chApp .banner h2{margin:0;font-size:16px}
+  #chApp .banner p{margin:2px 0 0;font-size:12px;font-style:italic}
+  #chApp .row{display:grid;grid-template-columns:230px 1fr;border:1px solid var(--ln);border-top:0}
+  #chApp .row:first-of-type{border-top:1px solid var(--ln)}
+  #chApp .row > label,#chApp .row > .lbl{background:var(--lt);padding:12px;font-weight:bold;font-size:13px}
+  #chApp .row > div.ctl{padding:10px 12px}
+  #chApp .hint{display:block;color:var(--gy);font-style:italic;font-size:11.5px;margin-bottom:6px}
+  #chApp input[type=text],#chApp input[type=date],#chApp input[type=number],#chApp textarea{width:100%;padding:7px 9px;border:1px solid var(--ln);border-radius:4px;font:inherit;background:#FAFBFC}
+  #chApp textarea{min-height:64px;resize:vertical}
+  #chApp input:focus,#chApp textarea:focus{outline:2px solid var(--g);outline-offset:1px;background:#fff}
+  #chApp .checks{display:flex;flex-wrap:wrap;gap:6px 18px;margin-bottom:6px}
+  #chApp .checks label{font-weight:normal;display:flex;align-items:center;gap:6px;cursor:pointer}
+  #chApp input[type=checkbox],#chApp input[type=radio]{accent-color:var(--g);width:16px;height:16px}
+  #chApp .need{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--ln);border-top:0}
+  #chApp .need label{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:10px 12px;border-top:1px solid var(--ln);cursor:pointer}
+  #chApp .need label:nth-child(odd){border-right:1px solid var(--ln)}
+  #chApp .need label:hover{background:var(--lt)}
+  #chApp .need label span.opt{display:flex;align-items:center;gap:8px}
+  #chApp .need .tag{color:var(--g);font-weight:bold;font-size:12px;white-space:nowrap}
+  #chApp .need label.sel{background:var(--lt);box-shadow:inset 3px 0 0 var(--g)}
+  #chApp .placeholder{margin-top:16px;padding:22px;text-align:center;background:var(--bg);border:1px dashed var(--ln);border-radius:6px}
+  #chApp .placeholder strong{display:block;font-size:15px;margin-bottom:4px}
+  #chApp .placeholder span{color:var(--gy);font-size:12.5px;font-style:italic}
+  #chApp .block[hidden],#chApp .placeholder[hidden]{display:none}
+  #chApp .actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+  #chApp button{font:inherit;font-weight:bold;padding:10px 18px;border-radius:4px;border:2px solid var(--g);cursor:pointer}
+  #chApp .primary{background:var(--g);color:#fff}
+  #chApp .secondary{background:#fff;color:var(--g)}
+  #chApp button:focus-visible{outline:3px solid var(--dk);outline-offset:2px}
+  #chApp .msg{margin-top:12px;font-size:13px}
+  #chApp .msg.err{color:#B91C1C}
+  #chApp .msg.ok{color:var(--g)}
+  #chApp footer{text-align:right;color:var(--gy);font-size:11px;margin-top:26px}
+  @media (max-width:640px){
+    #chApp .wrap{padding:20px 16px;margin:0;border-radius:0}
+    #chApp .row{grid-template-columns:1fr}
+    #chApp .need{grid-template-columns:1fr}
+    #chApp .need label:nth-child(odd){border-right:0}
+  }
+  #chApp{background:var(--bg);padding:8px}
+  #chApp .wrap{margin:0 auto}
+  #chApp #fallback{width:100%;min-height:160px;margin-top:10px;font-family:Consolas,monospace;font-size:12px}
+  @media (prefers-color-scheme:dark){
+    #chApp{--lt:#173a27;--dk:#E5E7EB;--gy:#9CA3AF;--ln:#374151;--bg:#111827}
+    #chApp .wrap{background:#1F2937;box-shadow:none}
+    #chApp input[type=text],#chApp input[type=date],#chApp input[type=number],#chApp textarea{background:#111827;color:#E5E7EB}
+    #chApp .secondary{background:#1F2937;color:#4ADE80;border-color:#4ADE80}
+    #chApp .need .tag,#chApp .eyebrow,#chApp .msg.ok{color:#4ADE80}
+  }
+  @media print{
+    #chApp{background:#fff;padding:0}
+    #chApp .wrap{box-shadow:none;margin:0;padding:0;max-width:none}
+    #chApp .actions,#chApp .msg,#chApp .placeholder,#chApp #fallback{display:none!important}
+    #chApp .row,#chApp .banner{break-inside:avoid}
+    #chApp .banner,#chApp .row > label,#chApp .row > .lbl,#chApp .need label.sel{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  }
+
+  #chApp .dd{position:relative}
+  #chApp button.ddbtn{width:100%;text-align:left;font-weight:normal;background:#FAFBFC;color:var(--dk);border:1px solid var(--ln);border-radius:4px;padding:7px 30px 7px 9px;position:relative}
+  #chApp button.ddbtn::after{content:"\25BE";position:absolute;right:10px;top:50%;transform:translateY(-50%);color:var(--gy)}
+  #chApp button.ddbtn[aria-expanded="true"]{border-radius:4px 4px 0 0;outline:2px solid var(--g);outline-offset:1px}
+  #chApp .ddpanel{border:1px solid var(--ln);border-top:0;border-radius:0 0 4px 4px;padding:8px 10px;display:flex;flex-direction:column;gap:8px;background:#fff}
+  #chApp .ddpanel[hidden]{display:none}
+  #chApp .ddpanel label{display:flex;align-items:center;gap:8px;cursor:pointer;font-weight:normal}
+  @media (prefers-color-scheme:dark){ #chApp button.ddbtn{background:#111827;color:#E5E7EB} #chApp .ddpanel{background:#111827} }
+</style><div class="wrap">
+  <div class="eyebrow">CAMPAIGN HUB</div>
+  <h1>Campaign Brief</h1>
+  <div class="path">Performance Marketing Campaign Brief &gt; NA &gt; Campaign Hub</div>
   <hr>
   <ul class="howto">
     <li>Complete <strong>Block A</strong> for every request.</li>
     <li>Select <strong>ONE</strong> option under <strong>What do you need?</strong>. Only the fields for that request type will appear.</li>
-    <li>When finished, click <strong>Download Word (.docx)</strong>, <strong>Download text</strong> or <strong>Print / Save as PDF</strong> and send it to the Campaign Hub team with your assets.</li>
+    <li>When finished, click <strong>Download Word (.docx)</strong>. If the download is blocked, use <strong>Show answers as text</strong> and copy them. Send it to the Campaign Hub team with your assets.</li>
     <li>Put any Salesforce Campaign ID in <strong>Description</strong>. There is no separate field for it.</li>
   </ul>
   <div class="note"><span class="star">*</span> Field not yet confirmed on the live Workfront form. Fill it in anyway.</div>
@@ -99,19 +118,17 @@
 
     <div class="actions">
       <button type="button" class="primary" id="btnWord">Download Word (.docx)</button>
-      <button type="button" class="secondary" id="btnDownload">Download text (.txt)</button>
+      <button type="button" class="secondary" id="btnShow">Show answers as text</button>
       <button type="button" class="secondary" id="btnPrint">Print / Save as PDF</button>
       <button type="button" class="secondary" id="btnReset">Clear form</button>
     </div>
     <div class="msg" id="msg" aria-live="polite"></div>
+    <textarea id="fallback" hidden readonly aria-label="Your answers as text"></textarea>
   </form>
   <footer>NA Campaign Hub | Offline Request Form</footer>
-</div>
-
-<script>
+</div></div><script>
 (function(){
   // ---------- Field definitions (labels match Workfront field inventory) ----------
-  // type: text | big | date | number | checks | checkstext | info
   var A = [
     ["Subject / request name","Clear, searchable name. Example: SMB Q3 Webinar - Form update","text"],
     ["Description","What you are requesting and why. Include Salesforce Campaign ID if you have one.","big"],
@@ -119,7 +136,7 @@
     ["Desired date","Event email = trade show date | Association = go-live date | Email = email drop date | Webinar = webinar go-live date","date"],
     ["Target MQL","Number","number"],
     ["Target SQO","Number","number"],
-    ["Rationale","Why this request matters and what business goal it supports","text"],
+    ["Rationale","Select all that apply","multi",["Brand Awareness","Demand Generation","Targeted Outreach to Potential Leads"]],
     ["Deliverables*","List each deliverable (e.g. 3 emails, 1 landing page, 1 form)","text"],
     ["Campaign Name / ID","Exact Campaign Name or ID as it appears in Workfront","text"],
     ["Additional information","Anything not covered above, or paste/link your campaign brief","big"],
@@ -184,7 +201,7 @@
     ["Final check","","checks",["Assets attached","Correct block completed","Desired date set"]]
   ];
 
-  var form = document.getElementById("chForm");
+  var root=document.getElementById("chApp"); var form = root.querySelector("#chForm");
   var uid = 0;
   function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];});}
 
@@ -203,6 +220,13 @@
       if (type==="checkstext") ctl += '<input type="text" name="'+esc(name)+' (details)" aria-label="'+esc(clean)+' details">';
       return '<div class="row"><div class="lbl">'+lab+'</div><div class="ctl" role="group" aria-label="'+esc(clean)+'">'+h+ctl+'</div></div>';
     }
+    if (type==="multi"){
+      ctl = '<div class="dd"><button type="button" class="ddbtn" aria-expanded="false" aria-haspopup="true" aria-label="'+esc(clean)+'"><span class="ddtxt">Select one or more</span></button>'+
+        '<div class="ddpanel" hidden>'+opts.map(function(o){
+          return '<label><input type="checkbox" name="'+esc(name)+'" value="'+esc(o)+'"> '+esc(o)+'</label>';
+        }).join("")+'</div></div>';
+      return '<div class="row"><div class="lbl">'+lab+'</div><div class="ctl" role="group" aria-label="'+esc(clean)+'">'+h+ctl+'</div></div>';
+    }
     if (type==="big") ctl = '<textarea id="'+id+'" name="'+esc(name)+'"'+desc+'></textarea>';
     else ctl = '<input id="'+id+'" type="'+(type==="text"?"text":type)+'" name="'+esc(name)+'"'+desc+(type==="number"?' min="0" step="1" inputmode="numeric"':'')+'>';
     return '<div class="row"><label for="'+id+'">'+lab+'</label><div class="ctl">'+h+ctl+'</div></div>';
@@ -213,17 +237,32 @@
       fields.map(function(f){return rowHTML(key==="S"?"Sign-off":"Block "+key, f);}).join("")+'</div>';
   }
 
-  document.getElementById("blockA").innerHTML = section("A","BLOCK A | Request basics","Required for all requests",A);
+  root.querySelector("#blockA").innerHTML = section("A","BLOCK A | Request basics","Required for all requests",A);
   var bh=""; for (var k in BLOCKS) bh += section(k, BLOCKS[k][0], "Shown because you selected a matching option above", BLOCKS[k][1]);
-  document.getElementById("blocks").innerHTML = bh;
-  document.getElementById("signoff").innerHTML = section("S","Requester sign-off","",SIGN);
-  document.getElementById("needList").innerHTML = NEED.map(function(n,i){
+  root.querySelector("#blocks").innerHTML = bh;
+  root.querySelector("#signoff").innerHTML = section("S","Requester sign-off","",SIGN);
+  root.querySelector("#needList").innerHTML = NEED.map(function(n,i){
     return '<label><span class="opt"><input type="radio" name="What do you need?" value="'+esc(n[0])+'" data-block="'+n[1]+'"> '+esc(n[0])+'</span>'+
       '<span class="tag">'+(n[1]==="A"?"Block A only":"Block "+n[1])+'</span></label>';
   }).join("");
 
+
+  // ---------- Multi-select dropdowns ----------
+  function ddLabel(dd){
+    var v=[].map.call(dd.querySelectorAll("input:checked"),function(i){return i.value;});
+    dd.querySelector(".ddtxt").textContent = v.length ? v.join(", ") : "Select one or more";
+  }
+  function ddClose(dd){ dd.querySelector(".ddpanel").hidden=true; dd.querySelector(".ddbtn").setAttribute("aria-expanded","false"); }
+  form.querySelectorAll(".dd").forEach(function(dd){
+    var btn=dd.querySelector(".ddbtn"), panel=dd.querySelector(".ddpanel");
+    btn.addEventListener("click",function(){ var open=panel.hidden; panel.hidden=!open; btn.setAttribute("aria-expanded",String(open)); });
+    panel.addEventListener("change",function(){ ddLabel(dd); });
+    dd.addEventListener("keydown",function(e){ if(e.key==="Escape"){ ddClose(dd); btn.focus(); } });
+  });
+  document.addEventListener("click",function(e){ form.querySelectorAll(".dd").forEach(function(dd){ if(!dd.contains(e.target)) ddClose(dd); }); });
+  form.addEventListener("reset",function(){ setTimeout(function(){ form.querySelectorAll(".dd").forEach(function(dd){ ddLabel(dd); ddClose(dd); }); },0); });
   // ---------- Show / hide ----------
-  var placeholder=document.getElementById("placeholder"), noneMsg=document.getElementById("noneMsg");
+  var placeholder=root.querySelector("#placeholder"), noneMsg=root.querySelector("#noneMsg");
   function update(){
     var sel = form.querySelector('input[name="What do you need?"]:checked');
     var key = sel ? sel.getAttribute("data-block") : null;
@@ -232,41 +271,12 @@
     placeholder.hidden = !!key;
     noneMsg.hidden = key!=="A";
   }
-  document.getElementById("needList").addEventListener("change", update);
+  root.querySelector("#needList").addEventListener("change", update);
 
-  // ---------- Collect answers (only visible block) ----------
-  var msg=document.getElementById("msg");
+  var msg=root.querySelector("#msg");
   function say(t,cls){ msg.textContent=t; msg.className="msg "+(cls||""); }
-  function collect(){
-    var out=[], groups={};
-    form.querySelectorAll("input,textarea").forEach(function(el){
-      if (el.closest(".block[hidden]")) return;
-      var n=el.name; if(!n) return;
-      if (!(n in groups)) { groups[n]=[]; out.push(n); }
-      if ((el.type==="checkbox"||el.type==="radio")) { if(el.checked) groups[n].push(el.value); }
-      else if (el.value.trim()!=="") groups[n].push(el.value.trim());
-    });
-    return out.map(function(n){ return [n, groups[n].join(", ")]; });
-  }
 
-  document.getElementById("btnDownload").addEventListener("click", function(){
-    var need = form.querySelector('input[name="What do you need?"]:checked');
-    var subj = form.querySelector('[name="Block A | Subject / request name"]');
-    if (!need){ say("Please select an option under What do you need? before downloading.","err"); return; }
-    var rows = collect();
-    var txt = "NA CAMPAIGN HUB | PERFORMANCE MARKETING REQUEST\r\n" +
-      "Generated: " + new Date().toLocaleString() + "\r\n\r\n" +
-      rows.map(function(r){ return r[0] + ":\r\n  " + (r[1] || "(blank)"); }).join("\r\n\r\n");
-    var name = (subj && subj.value.trim() ? subj.value.trim() : "CampaignHub_Request")
-      .replace(/[^A-Za-z0-9 _-]+/g,"").trim().replace(/\s+/g,"_").slice(0,60) || "CampaignHub_Request";
-    var a=document.createElement("a");
-    a.href=URL.createObjectURL(new Blob([txt],{type:"text/plain"}));
-    a.download=name+".txt"; document.body.appendChild(a); a.click();
-    setTimeout(function(){ URL.revokeObjectURL(a.href); a.remove(); },500);
-    say("Answers downloaded. Send the file to the Campaign Hub team with your assets.","ok");
-  });
-
-  // ---------- Word (.docx) export: built in the browser, no libraries ----------
+  // ---------- Collect answers (only visible blocks) ----------
   function sections(){
     var out=[];
     form.querySelectorAll(".block").forEach(function(b){
@@ -288,6 +298,8 @@
     });
     return out;
   }
+
+  // ---------- Word (.docx) export: built in the browser, no libraries ----------
   function x(s){return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");}
   function runs(t,opt){
     opt=opt||{}; var rpr='<w:rPr><w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial"/>'+(opt.b?'<w:b/>':'')+(opt.i?'<w:i/>':'')+
@@ -304,7 +316,7 @@
   var BORD='<w:tblBorders>'+["top","left","bottom","right","insideH","insideV"].map(function(k){return '<w:'+k+' w:val="single" w:sz="4" w:color="C9CED6"/>';}).join("")+'</w:tblBorders>';
   function sectionXML(title,rows){
     var t='<w:tbl><w:tblPr><w:tblW w:w="9360" w:type="dxa"/>'+BORD+'<w:tblLayout w:type="fixed"/></w:tblPr><w:tblGrid><w:gridCol w:w="3000"/><w:gridCol w:w="6360"/></w:tblGrid>';
-    t+='<w:tr>'+'<w:tc><w:tcPr><w:tcW w:w="9360" w:type="dxa"/><w:gridSpan w:val="2"/><w:shd w:val="clear" w:color="auto" w:fill="00813D"/></w:tcPr>'+para(title,{b:true,c:"FFFFFF",sz:24},40)+'</w:tc></w:tr>';
+    t+='<w:tr><w:tc><w:tcPr><w:tcW w:w="9360" w:type="dxa"/><w:gridSpan w:val="2"/><w:shd w:val="clear" w:color="auto" w:fill="00813D"/></w:tcPr>'+para(title,{b:true,c:"FFFFFF",sz:24},40)+'</w:tc></w:tr>';
     rows.forEach(function(r){
       t+='<w:tr><w:trPr><w:cantSplit/></w:trPr>'+cell(3000,para(r[0],{b:true,sz:19},40),"E8F5EC")+
          cell(6360, r[1]?para(r[1],{sz:20},40):para("(blank)",{i:true,c:"9CA3AF",sz:19},40))+'</w:tr>';
@@ -343,9 +355,9 @@
   }
   function save(blob,name){
     var a=document.createElement("a"); a.href=URL.createObjectURL(blob); a.download=name;
-    document.body.appendChild(a); a.click(); setTimeout(function(){URL.revokeObjectURL(a.href);a.remove();},500);
+    root.appendChild(a); a.click(); setTimeout(function(){URL.revokeObjectURL(a.href);a.remove();},500);
   }
-  document.getElementById("btnWord").addEventListener("click", function(){
+  root.querySelector("#btnWord").addEventListener("click", function(){
     if (!form.querySelector('input[name="What do you need?"]:checked')){ say("Please select an option under What do you need? before downloading.","err"); return; }
     try{
       var blob=zip([
@@ -354,19 +366,29 @@
         ["word/document.xml",buildDocXML()]
       ]);
       save(blob,fileBase()+".docx");
-      say("Word document downloaded. Send it to the Campaign Hub team with your assets.","ok");
-    }catch(e){ say("Word download is not supported in this browser. Use Download text or Print / Save as PDF instead.","err"); }
+      say("Word download started. If no file appears, click Show answers as text and copy your answers instead.","ok");
+    }catch(e){ say("Word download is not supported here. Use Show answers as text instead.","err"); }
   });
-  document.getElementById("btnPrint").addEventListener("click", function(){
+  var fb=root.querySelector("#fallback");
+  root.querySelector("#btnReset").addEventListener("click", function(){
+    form.reset(); fb.hidden=true; update(); say("Form cleared.","ok");
+  });
+  root.querySelector("#btnShow").addEventListener("click", function(){
+    if (!form.querySelector('input[name="What do you need?"]:checked')){ say("Please select an option under What do you need? first.","err"); return; }
+    var t="NA CAMPAIGN HUB | PERFORMANCE MARKETING REQUEST\n\n";
+    sections().forEach(function(s){ t+=s[0].toUpperCase()+"\n"; s[1].forEach(function(r){ t+=r[0]+": "+(r[1]||"(blank)")+"\n"; }); t+="\n"; });
+    fb.value=t; fb.hidden=false; fb.focus(); fb.select();
+    say("Answers are selected below. Press Ctrl+C to copy, then paste into an email or Word.","ok");
+  });
+  var pb=root.querySelector("#btnPrint");
+  if (pb) pb.addEventListener("click", function(){
     if (!form.querySelector('input[name="What do you need?"]:checked')){ say("Please select an option under What do you need? first.","err"); return; }
     say(""); window.print();
-  });
-  document.getElementById("btnReset").addEventListener("click", function(){
-    if (confirm("Clear every answer on this form?")) { form.reset(); update(); say("Form cleared.","ok"); }
   });
   form.addEventListener("submit", function(e){ e.preventDefault(); });
   update();
 })();
 </script>
+
 </body>
 </html>
