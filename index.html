@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NA Campaign Hub | Performance Marketing Request Form</title>
+<style>
+  :root{--g:#00813D;--lt:#E8F5EC;--dk:#1F2937;--gy:#6B7280;--ln:#C9CED6;--am:#B45309;--bg:#F3F4F6}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);font-family:Arial,Helvetica,sans-serif;color:var(--dk);font-size:14px}
+  .wrap{max-width:860px;margin:24px auto;background:#fff;padding:32px 36px;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,.08)}
+  .eyebrow{color:var(--g);font-weight:bold;font-size:12px;letter-spacing:.5px}
+  h1{margin:4px 0 2px;font-size:24px}
+  .path{color:var(--gy);font-style:italic;font-size:12px;margin-bottom:12px}
+  hr{border:0;border-top:2px solid var(--g);margin:0 0 16px}
+  ul.howto{margin:0 0 6px;padding-left:20px;font-size:13px;line-height:1.6}
+  .note{font-size:12px;color:var(--gy);font-style:italic;margin-bottom:18px}
+  .star{color:var(--am);font-weight:bold}
+  .banner{background:var(--g);color:#fff;padding:10px 14px;border-radius:4px 4px 0 0;margin-top:22px}
+  .banner h2{margin:0;font-size:16px}
+  .banner p{margin:2px 0 0;font-size:12px;font-style:italic}
+  .row{display:grid;grid-template-columns:230px 1fr;border:1px solid var(--ln);border-top:0}
+  .row:first-of-type{border-top:1px solid var(--ln)}
+  .row > label,.row > .lbl{background:var(--lt);padding:12px;font-weight:bold;font-size:13px}
+  .row > div.ctl{padding:10px 12px}
+  .hint{display:block;color:var(--gy);font-style:italic;font-size:11.5px;margin-bottom:6px}
+  input[type=text],input[type=date],input[type=number],textarea{width:100%;padding:7px 9px;border:1px solid var(--ln);border-radius:4px;font:inherit;background:#FAFBFC}
+  textarea{min-height:64px;resize:vertical}
+  input:focus,textarea:focus{outline:2px solid var(--g);outline-offset:1px;background:#fff}
+  .checks{display:flex;flex-wrap:wrap;gap:6px 18px;margin-bottom:6px}
+  .checks label{font-weight:normal;display:flex;align-items:center;gap:6px;cursor:pointer}
+  input[type=checkbox],input[type=radio]{accent-color:var(--g);width:16px;height:16px}
+  .need{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--ln);border-top:0}
+  .need label{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:10px 12px;border-top:1px solid var(--ln);cursor:pointer}
+  .need label:nth-child(odd){border-right:1px solid var(--ln)}
+  .need label:hover{background:var(--lt)}
+  .need label span.opt{display:flex;align-items:center;gap:8px}
+  .need .tag{color:var(--g);font-weight:bold;font-size:12px;white-space:nowrap}
+  .need label.sel{background:var(--lt);box-shadow:inset 3px 0 0 var(--g)}
+  .placeholder{margin-top:16px;padding:22px;text-align:center;background:var(--bg);border:1px dashed var(--ln);border-radius:6px}
+  .placeholder strong{display:block;font-size:15px;margin-bottom:4px}
+  .placeholder span{color:var(--gy);font-size:12.5px;font-style:italic}
+  .block[hidden],.placeholder[hidden]{display:none}
+  .actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+  button{font:inherit;font-weight:bold;padding:10px 18px;border-radius:4px;border:2px solid var(--g);cursor:pointer}
+  .primary{background:var(--g);color:#fff}
+  .secondary{background:#fff;color:var(--g)}
+  button:focus-visible{outline:3px solid var(--dk);outline-offset:2px}
+  .msg{margin-top:12px;font-size:13px}
+  .msg.err{color:#B91C1C}
+  .msg.ok{color:var(--g)}
+  footer{text-align:right;color:var(--gy);font-size:11px;margin-top:26px}
+  @media (max-width:640px){
+    .wrap{padding:20px 16px;margin:0;border-radius:0}
+    .row{grid-template-columns:1fr}
+    .need{grid-template-columns:1fr}
+    .need label:nth-child(odd){border-right:0}
+  }
+  @media print{
+    body{background:#fff}
+    .wrap{box-shadow:none;margin:0;padding:0;max-width:none}
+    .actions,.msg,.placeholder{display:none!important}
+    .row,.banner{break-inside:avoid}
+    .banner,.row > label,.row > .lbl,.need label.sel{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="eyebrow">NA CAMPAIGN HUB</div>
+  <h1>Performance Marketing Request Form (Offline)</h1>
+  <div class="path">Mirrors Workfront: Performance Marketing Requests &gt; NA &gt; Campaign Hub</div>
+  <hr>
+  <ul class="howto">
+    <li>Complete <strong>Block A</strong> for every request.</li>
+    <li>Select <strong>ONE</strong> option under <strong>What do you need?</strong>. Only the fields for that request type will appear.</li>
+    <li>When finished, click <strong>Download Word (.docx)</strong>, <strong>Download text</strong> or <strong>Print / Save as PDF</strong> and send it to the Campaign Hub team with your assets.</li>
+    <li>Put any Salesforce Campaign ID in <strong>Description</strong>. There is no separate field for it.</li>
+  </ul>
+  <div class="note"><span class="star">*</span> Field not yet confirmed on the live Workfront form. Fill it in anyway.</div>
+
+  <form id="chForm" novalidate>
+    <div id="blockA"></div>
+
+    <div class="banner"><h2>What do you need?</h2><p>Select ONE. Only the fields for that request type appear below.</p></div>
+    <div class="need" id="needList" role="radiogroup" aria-label="What do you need?"></div>
+
+    <div class="placeholder" id="placeholder" aria-live="polite">
+      <strong>Select an option above to see the fields you need.</strong>
+      <span>Your request type fields will appear here.</span>
+    </div>
+    <div class="placeholder" id="noneMsg" hidden aria-live="polite">
+      <strong>No extra fields needed for this request type.</strong>
+      <span>Block A covers it. Complete the sign-off below.</span>
+    </div>
+    <div id="blocks"></div>
+
+    <div id="signoff"></div>
+
+    <div class="actions">
+      <button type="button" class="primary" id="btnWord">Download Word (.docx)</button>
+      <button type="button" class="secondary" id="btnDownload">Download text (.txt)</button>
+      <button type="button" class="secondary" id="btnPrint">Print / Save as PDF</button>
+      <button type="button" class="secondary" id="btnReset">Clear form</button>
+    </div>
+    <div class="msg" id="msg" aria-live="polite"></div>
+  </form>
+  <footer>NA Campaign Hub | Offline Request Form</footer>
+</div>
+
+<script>
+(function(){
+  // ---------- Field definitions (labels match Workfront field inventory) ----------
+  // type: text | big | date | number | checks | checkstext | info
+  var A = [
+    ["Subject / request name","Clear, searchable name. Example: SMB Q3 Webinar - Form update","text"],
+    ["Description","What you are requesting and why. Include Salesforce Campaign ID if you have one.","big"],
+    ["Vertical","Example: Construction, NFP, Professional Services, Partners","text"],
+    ["Desired date","Event email = trade show date | Association = go-live date | Email = email drop date | Webinar = webinar go-live date","date"],
+    ["Target MQL","Number","number"],
+    ["Target SQO","Number","number"],
+    ["Rationale","Why this request matters and what business goal it supports","text"],
+    ["Deliverables*","List each deliverable (e.g. 3 emails, 1 landing page, 1 form)","text"],
+    ["Campaign Name / ID","Exact Campaign Name or ID as it appears in Workfront","text"],
+    ["Additional information","Anything not covered above, or paste/link your campaign brief","big"],
+    ["Documents / attachments","Tick what you are attaching, then list the files","checkstext",["Assets","Brief","Data list","Other"]]
+  ];
+  var BLOCKS = {
+    B:["BLOCK B | Email (Time-Sensitive Email, Email Campaign)",[
+      ["Describe the scope of work","Number of versions, French and/or localized","text"],
+      ["Who","Audience. Does a segment already exist?","checkstext",["Yes, segment exists","No"]],
+      ["What","Copy, assets, images, URLs","text"],
+      ["Where","CA-FR requests are handled separately","checks",["North America","US only","CA-EN only"]],
+      ["When","When emails are needed by, and when they should send","text"],
+      ["Why","Short description of the purpose","text"],
+      ["Proof requirements","Subject line, preheader, seed list","text"]]],
+    C:["BLOCK C | Email Nurture",[
+      ["Net-new vs revamp","","checks",["Net-new","Revamp of existing nurture"]],
+      ["Audience / segment size","Target account list and approximate segment size","text"],
+      ["Pain points","Up to four. For each: description and tone","big"],
+      ["Assets per pain point","Three per pain point: two low-score, one high-score","big"],
+      ["Demo / product tour links, images","Links and image files","text"],
+      ["Industry nuances","Optional","text"],
+      ["Creative direction","Optional. Example or preferred email design","text"]]],
+    D:["BLOCK D | Landing Page / Form / Gate ID",[
+      ["Briefly link","Paste the link to your completed Briefly brief","text"],
+      ["Salesforce Campaign ID","Also add this in Description","text"],
+      ["Assets","Attach the gated asset (PDF, etc.)","checks",["Attached"]],
+      ["Campaign page vs sage.com","","checks",["Campaign page","sage.com"]],
+      ["Form spec (downstream)","Visible/required fields, hidden fields, UTMs, thank-you message, Campaign Response Value. Can be in the brief.","big"]]],
+    E:["BLOCK E | Webinar",[
+      ["Campaign Name / ID","Must match the value Workfront returns","text"],
+      ["Webinar title","65 to 75 characters","text"],
+      ["Briefly brief","Link. Complete and review before submitting","checkstext",["Reviewed"]],
+      ["ON24 details","ON24 ID, ON24 Key, Event/Audience link (if available)","text"],
+      ["One request per form","","checks",["I confirm this is one request"]]]],
+    F:["BLOCK F | Data (Upload Data List, Data / Contact List)",[
+      ["Segment details","Segment name, titles/industry, purchased list name","text"],
+      ["Exclusions","Who should be excluded","text"],
+      ["List file","Use the standard Data Upload Template","checks",["Attached"]]]],
+    G:["BLOCK G | Content production for partners",[
+      ["Partner fields*","Partner name, content needed, partner contact","big"],
+      ["Vertical = Partners","","checks",["Vertical set to Partners in Block A"]],
+      ["Market list*","","checks",["North America","US","CA-EN"]]]],
+    H:["BLOCK H | Event & Trade Show",[
+      ["Fiscal year","Example: FY27","text"],
+      ["Event name, location, dates","","text"],
+      ["Booth size / sponsorship level","","text"],
+      ["Target audience & deliverables","","text"],
+      ["Budget estimate & tier","","text"],
+      ["Goals","Expected leads, MQLs, SQOs","text"]]]
+  };
+  var NEED = [
+    ["Content production for partners","G"],["Content","A"],
+    ["Webinar","E"],["Outreach Sequence","A"],
+    ["Landing Page / Form","D"],["Gate ID","D"],
+    ["Time-Sensitive Email","B"],["Email Nurture","C"],
+    ["Email Campaign","B"],["Upload Data List","F"],
+    ["Data / Contact List","F"],["Event & Trade Show","H"]
+  ];
+  var SIGN = [
+    ["Requester name","","text"],
+    ["Date submitted","","date"],
+    ["Final check","","checks",["Assets attached","Correct block completed","Desired date set"]]
+  ];
+
+  var form = document.getElementById("chForm");
+  var uid = 0;
+  function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];});}
+
+  function rowHTML(block, f){
+    var label=f[0], hint=f[1], type=f[2], opts=f[3]||[];
+    var star = /\*$/.test(label), clean = label.replace(/\*$/,"");
+    var id = "f" + (++uid), name = block + " | " + clean;
+    var lab = esc(clean) + (star ? ' <span class="star">*</span>' : "");
+    var h = hint ? '<span class="hint" id="'+id+'h">'+esc(hint)+'</span>' : "";
+    var desc = hint ? ' aria-describedby="'+id+'h"' : "";
+    var ctl = "";
+    if (type==="checks" || type==="checkstext"){
+      ctl += '<div class="checks">' + opts.map(function(o){
+        return '<label><input type="checkbox" name="'+esc(name)+'" value="'+esc(o)+'"> '+esc(o)+'</label>';
+      }).join("") + '</div>';
+      if (type==="checkstext") ctl += '<input type="text" name="'+esc(name)+' (details)" aria-label="'+esc(clean)+' details">';
+      return '<div class="row"><div class="lbl">'+lab+'</div><div class="ctl" role="group" aria-label="'+esc(clean)+'">'+h+ctl+'</div></div>';
+    }
+    if (type==="big") ctl = '<textarea id="'+id+'" name="'+esc(name)+'"'+desc+'></textarea>';
+    else ctl = '<input id="'+id+'" type="'+(type==="text"?"text":type)+'" name="'+esc(name)+'"'+desc+(type==="number"?' min="0" step="1" inputmode="numeric"':'')+'>';
+    return '<div class="row"><label for="'+id+'">'+lab+'</label><div class="ctl">'+h+ctl+'</div></div>';
+  }
+  function section(key, title, sub, fields){
+    return '<div class="block" data-block="'+key+'"'+(BLOCKS[key]?" hidden":"")+'>'+
+      '<div class="banner"><h2>'+esc(title)+'</h2>'+(sub?'<p>'+esc(sub)+'</p>':'')+'</div>'+
+      fields.map(function(f){return rowHTML(key==="S"?"Sign-off":"Block "+key, f);}).join("")+'</div>';
+  }
+
+  document.getElementById("blockA").innerHTML = section("A","BLOCK A | Request basics","Required for all requests",A);
+  var bh=""; for (var k in BLOCKS) bh += section(k, BLOCKS[k][0], "Shown because you selected a matching option above", BLOCKS[k][1]);
+  document.getElementById("blocks").innerHTML = bh;
+  document.getElementById("signoff").innerHTML = section("S","Requester sign-off","",SIGN);
+  document.getElementById("needList").innerHTML = NEED.map(function(n,i){
+    return '<label><span class="opt"><input type="radio" name="What do you need?" value="'+esc(n[0])+'" data-block="'+n[1]+'"> '+esc(n[0])+'</span>'+
+      '<span class="tag">'+(n[1]==="A"?"Block A only":"Block "+n[1])+'</span></label>';
+  }).join("");
+
+  // ---------- Show / hide ----------
+  var placeholder=document.getElementById("placeholder"), noneMsg=document.getElementById("noneMsg");
+  function update(){
+    var sel = form.querySelector('input[name="What do you need?"]:checked');
+    var key = sel ? sel.getAttribute("data-block") : null;
+    form.querySelectorAll("#blocks .block").forEach(function(b){ b.hidden = (b.getAttribute("data-block")!==key); });
+    form.querySelectorAll("#needList label").forEach(function(l){ l.classList.toggle("sel", l.contains(sel)); });
+    placeholder.hidden = !!key;
+    noneMsg.hidden = key!=="A";
+  }
+  document.getElementById("needList").addEventListener("change", update);
+
+  // ---------- Collect answers (only visible block) ----------
+  var msg=document.getElementById("msg");
+  function say(t,cls){ msg.textContent=t; msg.className="msg "+(cls||""); }
+  function collect(){
+    var out=[], groups={};
+    form.querySelectorAll("input,textarea").forEach(function(el){
+      if (el.closest(".block[hidden]")) return;
+      var n=el.name; if(!n) return;
+      if (!(n in groups)) { groups[n]=[]; out.push(n); }
+      if ((el.type==="checkbox"||el.type==="radio")) { if(el.checked) groups[n].push(el.value); }
+      else if (el.value.trim()!=="") groups[n].push(el.value.trim());
+    });
+    return out.map(function(n){ return [n, groups[n].join(", ")]; });
+  }
+
+  document.getElementById("btnDownload").addEventListener("click", function(){
+    var need = form.querySelector('input[name="What do you need?"]:checked');
+    var subj = form.querySelector('[name="Block A | Subject / request name"]');
+    if (!need){ say("Please select an option under What do you need? before downloading.","err"); return; }
+    var rows = collect();
+    var txt = "NA CAMPAIGN HUB | PERFORMANCE MARKETING REQUEST\r\n" +
+      "Generated: " + new Date().toLocaleString() + "\r\n\r\n" +
+      rows.map(function(r){ return r[0] + ":\r\n  " + (r[1] || "(blank)"); }).join("\r\n\r\n");
+    var name = (subj && subj.value.trim() ? subj.value.trim() : "CampaignHub_Request")
+      .replace(/[^A-Za-z0-9 _-]+/g,"").trim().replace(/\s+/g,"_").slice(0,60) || "CampaignHub_Request";
+    var a=document.createElement("a");
+    a.href=URL.createObjectURL(new Blob([txt],{type:"text/plain"}));
+    a.download=name+".txt"; document.body.appendChild(a); a.click();
+    setTimeout(function(){ URL.revokeObjectURL(a.href); a.remove(); },500);
+    say("Answers downloaded. Send the file to the Campaign Hub team with your assets.","ok");
+  });
+
+  // ---------- Word (.docx) export: built in the browser, no libraries ----------
+  function sections(){
+    var out=[];
+    form.querySelectorAll(".block").forEach(function(b){
+      if (b.hidden) return;
+      var rows=[];
+      b.querySelectorAll(".row").forEach(function(r){
+        var lab=r.firstElementChild.textContent.replace(/\*\s*$/,"").trim(), vals=[];
+        r.querySelectorAll("input,textarea").forEach(function(el){
+          if (el.type==="checkbox"){ if(el.checked) vals.push(el.value); }
+          else if (el.value.trim()!=="") vals.push(el.value.trim());
+        });
+        rows.push([lab, vals.join(", ")]);
+      });
+      out.push([b.querySelector(".banner h2").textContent, rows]);
+      if (b.getAttribute("data-block")==="A"){
+        var need=form.querySelector('input[name="What do you need?"]:checked');
+        out.push(["What do you need?", [["What do you need?", need?need.value:""]]]);
+      }
+    });
+    return out;
+  }
+  function x(s){return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");}
+  function runs(t,opt){
+    opt=opt||{}; var rpr='<w:rPr><w:rFonts w:ascii="Arial" w:hAnsi="Arial" w:cs="Arial"/>'+(opt.b?'<w:b/>':'')+(opt.i?'<w:i/>':'')+
+      (opt.c?'<w:color w:val="'+opt.c+'"/>':'')+'<w:sz w:val="'+(opt.sz||20)+'"/></w:rPr>';
+    return String(t).split(/\r?\n/).map(function(line,i){
+      return (i?'<w:r>'+rpr+'<w:br/></w:r>':'')+'<w:r>'+rpr+'<w:t xml:space="preserve">'+x(line)+'</w:t></w:r>';
+    }).join("");
+  }
+  function para(t,opt,after){ return '<w:p><w:pPr><w:spacing w:after="'+(after==null?120:after)+'"/></w:pPr>'+runs(t,opt)+'</w:p>'; }
+  function cell(w,content,fill){
+    return '<w:tc><w:tcPr><w:tcW w:w="'+w+'" w:type="dxa"/>'+(fill?'<w:shd w:val="clear" w:color="auto" w:fill="'+fill+'"/>':'')+
+      '<w:tcMar><w:top w:w="80" w:type="dxa"/><w:left w:w="120" w:type="dxa"/><w:bottom w:w="80" w:type="dxa"/><w:right w:w="120" w:type="dxa"/></w:tcMar></w:tcPr>'+content+'</w:tc>';
+  }
+  var BORD='<w:tblBorders>'+["top","left","bottom","right","insideH","insideV"].map(function(k){return '<w:'+k+' w:val="single" w:sz="4" w:color="C9CED6"/>';}).join("")+'</w:tblBorders>';
+  function sectionXML(title,rows){
+    var t='<w:tbl><w:tblPr><w:tblW w:w="9360" w:type="dxa"/>'+BORD+'<w:tblLayout w:type="fixed"/></w:tblPr><w:tblGrid><w:gridCol w:w="3000"/><w:gridCol w:w="6360"/></w:tblGrid>';
+    t+='<w:tr>'+'<w:tc><w:tcPr><w:tcW w:w="9360" w:type="dxa"/><w:gridSpan w:val="2"/><w:shd w:val="clear" w:color="auto" w:fill="00813D"/></w:tcPr>'+para(title,{b:true,c:"FFFFFF",sz:24},40)+'</w:tc></w:tr>';
+    rows.forEach(function(r){
+      t+='<w:tr><w:trPr><w:cantSplit/></w:trPr>'+cell(3000,para(r[0],{b:true,sz:19},40),"E8F5EC")+
+         cell(6360, r[1]?para(r[1],{sz:20},40):para("(blank)",{i:true,c:"9CA3AF",sz:19},40))+'</w:tr>';
+    });
+    return t+'</w:tbl>'+para("",{},200);
+  }
+  function buildDocXML(){
+    var b=para("NA CAMPAIGN HUB",{b:true,c:"00813D",sz:20},40)+
+      para("Performance Marketing Request",{b:true,c:"1F2937",sz:36},40)+
+      para("Mirrors Workfront: Performance Marketing Requests > NA > Campaign Hub   |   Generated "+new Date().toLocaleString(),{i:true,c:"6B7280",sz:17},240);
+    sections().forEach(function(s){ b+=sectionXML(s[0],s[1]); });
+    return '<?xml version="1.0" encoding="UTF-8" standalone="yes"?><w:document xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"><w:body>'+b+
+      '<w:sectPr><w:pgSz w:w="12240" w:h="15840"/><w:pgMar w:top="1080" w:right="1440" w:bottom="1080" w:left="1440" w:header="720" w:footer="720" w:gutter="0"/></w:sectPr></w:body></w:document>';
+  }
+  // Minimal ZIP writer (stored, no compression)
+  var CRC=(function(){var t=[],c;for(var n=0;n<256;n++){c=n;for(var k=0;k<8;k++)c=c&1?0xEDB88320^(c>>>1):c>>>1;t[n]=c>>>0;}return t;})();
+  function crc32(u){var c=0xFFFFFFFF;for(var i=0;i<u.length;i++)c=CRC[(c^u[i])&0xFF]^(c>>>8);return (c^0xFFFFFFFF)>>>0;}
+  function zip(files){
+    var enc=new TextEncoder(), parts=[], central=[], off=0;
+    function le(n,b){var a=new Uint8Array(b);for(var i=0;i<b;i++)a[i]=(n>>>(8*i))&0xFF;return a;}
+    files.forEach(function(f){
+      var name=enc.encode(f[0]), data=enc.encode(f[1]), crc=crc32(data);
+      var head=[le(0x04034b50,4),le(20,2),le(0x0800,2),le(0,2),le(0,2),le(0x21,2),le(crc,4),le(data.length,4),le(data.length,4),le(name.length,2),le(0,2),name];
+      var cen=[le(0x02014b50,4),le(20,2),le(20,2),le(0x0800,2),le(0,2),le(0,2),le(0x21,2),le(crc,4),le(data.length,4),le(data.length,4),le(name.length,2),le(0,2),le(0,2),le(0,2),le(0,2),le(0,4),le(off,4),name];
+      head.forEach(function(h){parts.push(h);off+=h.length;}); parts.push(data); off+=data.length;
+      cen.forEach(function(h){central.push(h);});
+    });
+    var csize=central.reduce(function(a,h){return a+h.length;},0);
+    var end=[le(0x06054b50,4),le(0,2),le(0,2),le(files.length,2),le(files.length,2),le(csize,4),le(off,4),le(0,2)];
+    return new Blob(parts.concat(central,end),{type:"application/vnd.openxmlformats-officedocument.wordprocessingml.document"});
+  }
+  function fileBase(){
+    var subj=form.querySelector('[name="Block A | Subject / request name"]');
+    return (subj && subj.value.trim() ? subj.value.trim() : "CampaignHub_Request")
+      .replace(/[^A-Za-z0-9 _-]+/g,"").trim().replace(/\s+/g,"_").slice(0,60) || "CampaignHub_Request";
+  }
+  function save(blob,name){
+    var a=document.createElement("a"); a.href=URL.createObjectURL(blob); a.download=name;
+    document.body.appendChild(a); a.click(); setTimeout(function(){URL.revokeObjectURL(a.href);a.remove();},500);
+  }
+  document.getElementById("btnWord").addEventListener("click", function(){
+    if (!form.querySelector('input[name="What do you need?"]:checked')){ say("Please select an option under What do you need? before downloading.","err"); return; }
+    try{
+      var blob=zip([
+        ["[Content_Types].xml",'<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="xml" ContentType="application/xml"/><Override PartName="/word/document.xml" ContentType="application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml"/></Types>'],
+        ["_rels/.rels",'<?xml version="1.0" encoding="UTF-8" standalone="yes"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument" Target="word/document.xml"/></Relationships>'],
+        ["word/document.xml",buildDocXML()]
+      ]);
+      save(blob,fileBase()+".docx");
+      say("Word document downloaded. Send it to the Campaign Hub team with your assets.","ok");
+    }catch(e){ say("Word download is not supported in this browser. Use Download text or Print / Save as PDF instead.","err"); }
+  });
+  document.getElementById("btnPrint").addEventListener("click", function(){
+    if (!form.querySelector('input[name="What do you need?"]:checked')){ say("Please select an option under What do you need? first.","err"); return; }
+    say(""); window.print();
+  });
+  document.getElementById("btnReset").addEventListener("click", function(){
+    if (confirm("Clear every answer on this form?")) { form.reset(); update(); say("Form cleared.","ok"); }
+  });
+  form.addEventListener("submit", function(e){ e.preventDefault(); });
+  update();
+})();
+</script>
+</body>
+</html>
